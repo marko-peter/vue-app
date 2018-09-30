@@ -1,4 +1,4 @@
-axios.defaults.baseURL = 'http://fe-zadanie.herokuapp.com';
+axios.defaults.baseURL = 'https://fe-zadanie.herokuapp.com';
 
 const api = {
   // get all feeds from DB
