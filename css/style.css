@@ -1,0 +1,187 @@
+body {
+	background-image: url(background.jpg);
+	background-size: cover;
+}
+.container {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  padding: 0;
+}
+
+.card {
+	width: 47%;
+	margin: 10px 1.5%;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+form {
+	width: 100%;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+.card:hover {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+#name, #text {
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+/*clearfix*/
+.group:before,
+.group:after {
+	content: " ";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	*zoom: 1;
+}
+
+.jumbotron {
+  background-color: rgba(233, 236, 239, 0.8);
+  padding-bottom: 3%;
+}
+
+.btn-outline-primary {
+	padding: 3px 25px;
+}
+
+.buttons {
+  margin-left: 9%;
+}
+
+.delete {
+	margin-right: 10%;
+}
+
+.badge {
+	margin-left: 2%;
+}
+
+.truncate {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.fade-text {
+  position: relative;
+	height: 4.5em;  /* exactly three lines  */
+	overflow:hidden;
+}
+
+.fade-text:after {
+  content: "	";
+  text-align: right;
+	position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1.5em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(232, 241, 250, 0.8) 80%);
+}
+
+.feed-name {
+  margin-bottom: 5%;
+}
+
+.deleteBtn {
+  border: none;
+}
+
+.comment-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.comment-line  {
+  margin: 5px 0;
+}
+
+.comment-card, .card-form {
+  margin: 10px 0;
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 100%;
+  }
+  .card-form {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .comment-card {
+    width: 75%;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-form {
+    width: 100%;
+  }
+  .comment-card {
+    width: 100%;
+  }
+  .feed-name {
+    font-size: 2.0rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .likes {
+    text-align: right;
+    margin-right: 10%;
+  }
+
+  .smallLine {
+    display:none;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 2% 6% 2% 5%;
+  }
+  .feed-name {
+    font-size: 1.5rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .likes, .buttons {
+    text-align: center;
+  }
+  .buttons {
+    margin: 0;
+  }
+  .comment-heading {
+    font-size: 1.5rem;
+  }
+}
+
+/* special style for firefox */
+@-moz-document url-prefix() { 
+  label {
+    margin-bottom: 0;
+  }
+  .form-group {
+    margin-bottom: 3%;
+  }
+}
+
+/* special style for Internet Explorer */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+  textarea {
+    margin-bottom:32px;
+  }
+}
