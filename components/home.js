@@ -15,6 +15,10 @@ Vue.component('home', {
     </div>
   </div>
   
+  <spinner
+    v-show="showSpinner">
+  </spinner>
+
   <!-- list of all feeds -->
   <list-item
     v-for="feed in feeds"
@@ -31,7 +35,8 @@ Vue.component('home', {
       feeds: [],
       // props values for MyForm componenet
       nameInForm: '',
-      textInForm: ''
+      textInForm: '',
+      showSpinner: true
     }
   },
   methods: {
@@ -69,6 +74,7 @@ Vue.component('home', {
         if(response.status === 200) {
           // save reversed list of feeds (the newest are at the top)
           this.feeds = response.data.reverse();
+          this.showSpinner = false;
         }
       })
       // handle error
